@@ -25,7 +25,7 @@ Abra o terminal e execute os comandos abaixo:
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/BarbaraKammer/web.git
+git clone [https://github.com/BarbaraKammer/web.git](https://github.com/BarbaraKammer/Projeto-MVC.git)
 
 # Entrar na pasta do projeto
 cd web

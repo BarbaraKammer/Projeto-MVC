@@ -1,0 +1,14 @@
+{
+    "name": "meus-contatos/app",
+    "description": "Sistema de contatos usando PHP, Doctrine e MVC",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "doctrine/orm": "^3.3",
+        "symfony/cache": "^7.2"
+    }
+}

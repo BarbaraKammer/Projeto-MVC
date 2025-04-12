@@ -1,0 +1,12 @@
+/vendor/
+/node_modules/
+/.env
+*.log
+*.sqlite
+*.sqlite3
+.idea/
+.vscode/
+*.bak
+*.tmp
+.env.*
+docker-compose.override.yml

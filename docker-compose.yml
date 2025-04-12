@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  web:
+  build:
+    context: .
+    dockerfile: Dockerfile
+  container_name: my-php-app
+  ports:
+    - "8080:80"
+  volumes:
+    - .:/var/www/html
+  depends_on:
+    - mysql
+  networks:
+    - app-network
+
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=meus_contatos
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=senha
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mysql_data:

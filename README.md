@@ -28,7 +28,7 @@ Abra o terminal e execute os comandos abaixo:
 git clone https://github.com/BarbaraKammer/Projeto-MVC.git
 
 # Entrar na pasta do projeto
-cd web
+cd Projeto-MVC
 
 # Subir os containers com Docker
 docker-compose up -d

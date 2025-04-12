@@ -2,18 +2,18 @@ version: '3.8'
 
 services:
   web:
-  build:
-    context: .
-    dockerfile: Dockerfile
-  container_name: my-php-app
-  ports:
-    - "8080:80"
-  volumes:
-    - .:/var/www/html
-  depends_on:
-    - mysql
-  networks:
-    - app-network
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: my-php-app
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - mysql
+    networks:
+      - app-network
 
 
   mysql:

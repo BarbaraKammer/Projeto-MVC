@@ -30,6 +30,9 @@ git clone https://github.com/BarbaraKammer/Projeto-MVC.git
 # Entrar na pasta do projeto
 cd Projeto-MVC
 
+# Instalar dependencias PHP
+docker run --rm -v "/$(pwd -W):/app" -w //app composer install --ignore-platform-reqs
+
 # Subir os containers com Docker
 docker-compose up -d
 

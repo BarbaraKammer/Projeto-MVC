@@ -20,8 +20,9 @@ Para rodar esta aplicação, você precisa ter os seguintes programas instalados
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
 
+# Docker deve ser devidamente instalado e iniciado.
 
-Abra o terminal e execute os comandos abaixo:
+Abra o terminal do Git Bash e execute os comandos abaixo:
 
 ```bash
 # Clonar o repositório
